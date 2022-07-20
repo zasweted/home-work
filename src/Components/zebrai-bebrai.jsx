@@ -1,13 +1,14 @@
-function ZebrahAndBeaver({spalva}){
+function ZebrahAndBeaver({ spalva }){
 
     return (
+    
         <h1 style={
-            {
-                color: spalva,
-            }
+        {
+            color: spalva,
+        }
     }>Zebrai ir Bebrai</h1>
     );
 
 };
 
-export default ZebrahAndBeaver;
+export default ZebrahAndBeaver; 
