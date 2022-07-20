@@ -1,11 +1,11 @@
 function ZebrahAndBeaver({spalva}){
 
     return (
-        <div style={
+        <h1 style={
             {
                 color: spalva,
             }
-    }>Zebrai ir Bebrai</div>
+    }>Zebrai ir Bebrai</h1>
     );
 
 };
