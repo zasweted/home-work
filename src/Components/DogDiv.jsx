@@ -1,9 +1,10 @@
-function DogDivSquare({ dogName, spalva, plotis, aukstis, column, center, fleks }){
+function DogDivSquare({ dogName, color, spalva, plotis, aukstis, column, center, fleks }){
     return (
 
             <p style={
                 {
                     backgroundColor: spalva,
+                    color: color,
                     width: plotis +'px',
                     height: aukstis +'px',
                     display: fleks,
