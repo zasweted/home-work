@@ -1,4 +1,4 @@
-import Random from "../Functions/random-number-generator";
+import Random from "./random-number-generator";
 
 function RandomColor(){
     const color = Random(1, 2);
