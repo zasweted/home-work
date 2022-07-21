@@ -1,18 +1,12 @@
-function DogDivSquare({ dogName, color, spalva, plotis, aukstis, column, center, fleks }){
+const square = {backgroundColor: 'grey',color: 'white',width: '130px', height: '130px',display: 'flex',flexDirection: 'column',alignItems: 'center', justifyContent: 'center'};
+
+
+
+function DogDivSquare({ dogName }){
+
     return (
 
-            <p style={
-                {
-                    backgroundColor: spalva,
-                    color: color,
-                    width: plotis +'px',
-                    height: aukstis +'px',
-                    display: fleks,
-                    flexDirection: column,
-                    alignItems: center,
-                    justifyContent: center,
-                }
-        }>{dogName}</p>
+            <p style={square}>{dogName}</p>
 
     );
 };

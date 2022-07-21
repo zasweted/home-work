@@ -11,10 +11,7 @@ import OddEvenDogs from './Components/odd-even-dogs';
 
 
 const dogs = ['šuo', 'šunius', 'Bobikas', 'kudlius', 'Šarikas', 'avigalvis'];
-// const oddDogs = [];
-// const evenDogs = [];
-// dogs.filter((a, i) => i % 2 == 0 ? evenDogs.push(a) : oddDogs.push(a));
-// console.log(oddDogs, evenDogs);
+
 
 
 function App() {
@@ -29,20 +26,18 @@ function App() {
           <ThreeProps spalva='pink'></ThreeProps>
 
           {
-            dogs.map((a, i) => <DogDivSquare fleks={'flex'} center={'center'} column={'column'} key={i} dogName={a} spalva={'grey'} aukstis={'100'} plotis={'100'}></DogDivSquare>)
+            dogs.map((dog, index) => <DogDivSquare  key={index} dogName={dog}></DogDivSquare>)
           }
 
           {
-            [...dogs].sort((a, b) => b.length - a.length).map((a, i)=> <DogDivRound fleks={'flex'} column={'column'} center={'center'} key={i} dogName={i+1 + '. ' + a} spalva={'green'} aukstis={'130'} plotis={'130'} radius={'50'}></DogDivRound>)
+            [...dogs].sort((a, b) => b.length - a.length).map((dog, index)=> <DogDivRound key={index} dogName={index+1 + '. ' + dog}></DogDivRound>)
           }
 
           {
-            dogs.map((a, i)=> <OddEvenDogs key={i} RandomDog={a}></OddEvenDogs>)
+            dogs.map((dog, index) => <OddEvenDogs key={index} index={index} dogName={dog}></OddEvenDogs>)
           }
 
-          {
-            dogs.map((dog, indx) => <OddEvenDogs key={indx} name={dog}></OddEvenDogs>)
-          }
+          
 
         </div>
       </header>

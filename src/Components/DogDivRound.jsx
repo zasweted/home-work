@@ -1,17 +1,10 @@
-function DogDivRound({ dogName, spalva, aukstis, plotis, radius, fleks, column, center }){
+const round ={backgroundColor: 'green', height: '130px', width: '130px', borderRadius: '50%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'};
+
+function DogDivRound({ dogName }){
 
     return(
 
-        <p style={{
-            backgroundColor: spalva,
-            height: aukstis +'px',
-            width: plotis +'px',
-            borderRadius: radius +'%',
-            display: fleks,
-            flexDirection: column,
-            alignItems: center,
-            justifyContent: center,
-        }}>{dogName}</p>
+        <p style={round}>{dogName}</p>
 
     );
 
