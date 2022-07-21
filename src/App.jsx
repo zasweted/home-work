@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Zuikis></Zuikis>
-        <AnyText dydis="20px" ></AnyText>
+        <AnyText dydis="40px" ></AnyText>
         <ZebrahAndBeaver spalva={RandomColor()}></ZebrahAndBeaver>
         <DoubleText></DoubleText>
         <ThreeProps spalva='pink'></ThreeProps>
