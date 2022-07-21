@@ -1,4 +1,4 @@
-function DogDivRound({ dogName, spalva, aukstis, plotis, radius }){
+function DogDivRound({ dogName, spalva, aukstis, plotis, radius, fleks, column, center }){
 
     return(
 
@@ -7,6 +7,10 @@ function DogDivRound({ dogName, spalva, aukstis, plotis, radius }){
             height: aukstis +'px',
             width: plotis +'px',
             borderRadius: radius +'%',
+            display: fleks,
+            flexDirection: column,
+            alignItems: center,
+            justifyContent: center,
         }}>{dogName}</p>
 
     );
