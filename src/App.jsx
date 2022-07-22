@@ -9,10 +9,10 @@ import DogDivSquare from './Components/DogDiv';
 import DogDivRound from './Components/DogDivRound';
 import OddEvenDogs from './Components/odd-even-dogs';
 import LowerCaseDogs from './Components/lowercase';
+import DogLengthNumbers from './Components/dogLengthNumbers';
 
 
 const dogs = ['šuo', 'šunius', 'Bobikas', 'kudlius', 'Šarikas', 'avigalvis'];
-
 
 
 function App() {
@@ -42,6 +42,9 @@ function App() {
             dogs.map((a, i) => <LowerCaseDogs key={i} dogName={a} suva={a}></LowerCaseDogs>)
           }
 
+          {
+            dogs.map((a, i) => <DogLengthNumbers key={i} dogNameLength={a} length={a}></DogLengthNumbers>)
+          }
           
 
         </div>
