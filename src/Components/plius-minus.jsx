@@ -23,7 +23,6 @@ function AddRemove({ countTwo, setCount }){
                 width: '130px',
                 height: '130px',
                 backgroundColor: 'purple',
-                transform: 'rotate(45deg)',
             }}>{countTwo}</p>  
             <button onClick={add} style={{
                 marginTop: '50px',
