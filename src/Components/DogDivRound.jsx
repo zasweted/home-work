@@ -1,4 +1,4 @@
-const round ={backgroundColor: 'green', height: '130px', width: '130px', borderRadius: '50%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'};
+const round ={backgroundColor: 'green', fontSize: '25px', height: '130px', width: '130px', borderRadius: '50%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'};
 
 function DogDivRound({ dogName }){
 

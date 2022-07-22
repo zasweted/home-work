@@ -8,6 +8,7 @@ import Zuikis from './Components/zuikis';
 import DogDivSquare from './Components/DogDiv';
 import DogDivRound from './Components/DogDivRound';
 import OddEvenDogs from './Components/odd-even-dogs';
+import LowerCaseDogs from './Components/lowercase';
 
 
 const dogs = ['šuo', 'šunius', 'Bobikas', 'kudlius', 'Šarikas', 'avigalvis'];
@@ -35,6 +36,10 @@ function App() {
 
           {
             dogs.map((dog, index) => <OddEvenDogs key={index} index={index} dogName={dog}></OddEvenDogs>)
+          }
+
+          {
+            dogs.filter((dog, i) => <LowerCaseDogs key={i} dogName={dog}></LowerCaseDogs>)
           }
 
           
