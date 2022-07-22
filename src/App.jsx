@@ -39,7 +39,7 @@ function App() {
           }
 
           {
-            dogs.filter((dog, i) => <LowerCaseDogs key={i} dogName={dog}></LowerCaseDogs>)
+            dogs.map((a, i) => <LowerCaseDogs key={i} dogName={a} suva={a}></LowerCaseDogs>)
           }
 
           
