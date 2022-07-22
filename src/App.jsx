@@ -7,7 +7,7 @@ import DvigubasMigtukas from './Components/dvigubas-migtukas';
 
 function App() {
 
-    const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0);
   return (
     <div className="App">
       <header className="App-header">

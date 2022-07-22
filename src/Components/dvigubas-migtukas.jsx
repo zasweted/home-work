@@ -8,7 +8,7 @@ import Random from "../Functions/random-number-generator";
 
 
 function DvigubasMigtukas({ setCount, spalva, count }){
-
+    
     const [rad, setRad] = useState('50%')
     const changeStyle = () => {
     setRad(z => z === '50%' ? '0' : '50%')
@@ -22,7 +22,12 @@ function DvigubasMigtukas({ setCount, spalva, count }){
     return(
         <>
         <h2 style={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center',
             color: spalva,
+            fontSize: '60px',
             width: '150px',
             height: '150px',
             background: 'rgb(55,241,47)',
