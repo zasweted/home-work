@@ -22,7 +22,7 @@ function AddTwoCubes(){
         <>
             <p style={{
             fontSize: '40px',
-        }}>-----5-----</p>
+        }}>-----1.5-----</p>
         <button onClick={addRedCube}>Add Red</button>
         <button onClick={addBlueCube}>Add Blue</button>
         <button onClick={reset}>Reset</button>

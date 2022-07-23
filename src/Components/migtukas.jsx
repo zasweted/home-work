@@ -17,7 +17,7 @@ function Migtukas(){
         <>
         <p style={{
             fontSize: '40px',
-        }}>-----1-----</p>
+        }}>-----1.1-----</p>
         <h1 style={{
             width: '150px',
             height: '150px',
