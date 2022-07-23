@@ -26,6 +26,7 @@ function AddRemove(){
                 width: '130px',
                 height: '130px',
                 backgroundColor: 'purple',
+                borderRadius: '35px',
             }}>{count}</p>  
             <button onClick={add} style={{
                 marginTop: '50px',
