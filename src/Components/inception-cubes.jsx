@@ -1,11 +1,12 @@
 import { useState } from "react";
+import Random from "../Functions/random-number-generator";
 
 
 function InceptionCubes(){
 
     const [cubeBlack, setBlackCube] = useState([]);
     const addBlackCube = () => {
-        setBlackCube(x => [...x, ''])
+        setBlackCube(x => [...x, Random(1, 999)])
     };
 
     const [count, setCount] = useState(0);

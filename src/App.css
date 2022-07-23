@@ -118,7 +118,6 @@
 .inception-container {
   width: 100%;
   height: auto;
-  background-color: #fff;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
