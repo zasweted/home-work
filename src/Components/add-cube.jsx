@@ -10,7 +10,9 @@ function AddCube(){
     return(
 
         <>
-                <h2>-----CUBES-----</h2>
+                <p style={{
+            fontSize: '40px',
+        }}>-----4-----</p>
                 <button onClick={addCubes}>Add Cube</button>
                 <div className="cube-container">
 

@@ -21,6 +21,9 @@ function DvigubasMigtukas(){
 
     return(
         <>
+        <p style={{
+            fontSize: '40px',
+        }}>-----2-----</p>
         <h2 style={{
             display: 'flex',
             flexDirection: 'column',

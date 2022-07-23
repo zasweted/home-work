@@ -14,6 +14,9 @@ function AddRemove(){
 
         <>
             <p style={{
+            fontSize: '40px',
+        }}>-----3-----</p>
+            <p style={{
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
