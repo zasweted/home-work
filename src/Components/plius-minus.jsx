@@ -1,7 +1,7 @@
+import { useState } from "react";
 
-
-function AddRemove({ countTwo, setCount }){
-
+function AddRemove(){
+    const [count, setCount] = useState(0);
     const add = () => {
         setCount(x => x + 1)
     };
@@ -23,7 +23,7 @@ function AddRemove({ countTwo, setCount }){
                 width: '130px',
                 height: '130px',
                 backgroundColor: 'purple',
-            }}>{countTwo}</p>  
+            }}>{count}</p>  
             <button onClick={add} style={{
                 marginTop: '50px',
 

@@ -8,8 +8,8 @@ import AddRemove from './Components/plius-minus';
 
 function App() {
 
-  // const [count, setCount] = useState(0);
-  const [countTwo, setCount] = useState(0);
+  
+  
 
   return (
     <div className="App">
@@ -17,8 +17,8 @@ function App() {
         <div className='container'>
 
             <Migtukas></Migtukas>
-            {/* <DvigubasMigtukas spalva={'#fff'} setCount={setCount} count={count}></DvigubasMigtukas> */}
-            <AddRemove countTwo={countTwo} setCount={setCount}></AddRemove>
+            <DvigubasMigtukas></DvigubasMigtukas>
+            <AddRemove></AddRemove>
         </div>
       </header>
     </div>
