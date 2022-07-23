@@ -70,7 +70,11 @@ function Trees(){
         <div style={{
             marginBottom: '80px'
         }}>
-            <button onClick={reset}>reset</button>
+            <button style={{
+                fontSize: '40px',
+                padding: '20px 60px',
+                borderRadius: '50px'
+            }} onClick={reset}>reset</button>
         </div>
         </>
 
