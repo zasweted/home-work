@@ -6,6 +6,7 @@ import AddRemove from './Components/plius-minus';
 import AddCube from './Components/add-cube';
 import AddTwoCubes from './Components/add-two-cubes';
 import Trees from './Components/trees';
+import InceptionCubes from './Components/inception-cubes';
 
 
 
@@ -23,6 +24,7 @@ function App() {
             <AddCube></AddCube>
             <AddTwoCubes></AddTwoCubes>
             <Trees></Trees>
+            <InceptionCubes></InceptionCubes>
             
         
       </header>
