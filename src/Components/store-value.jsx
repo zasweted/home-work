@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
 function StoreValue(){
@@ -6,7 +6,19 @@ function StoreValue(){
     const [counter, setCounter] = useState(0)
     const addNumber = () => {
         setCounter(x => x + 1)
-    }
+    };
+
+    useEffect(() => {
+        const skaicius = localStorage.getItem('SKAICIUS');
+        setCounter(skaicius)
+        console.log('skaicius', skaicius);
+    }, [])
+
+
+    useEffect(() => {
+        localStorage.setItem('SKAICIUS', counter)
+        console.log('counter', counter);
+    }, [counter])
 
     return(
 
