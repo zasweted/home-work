@@ -8,17 +8,22 @@ function StoreValue(){
         setCounter(x => x + 1)
     };
 
+    const reset =() => {
+        setCounter(_ => 0)
+    };
+
     useEffect(() => {
         const skaicius = localStorage.getItem('SKAICIUS');
-        setCounter(skaicius)
+        if(skaicius !== null) setCounter(JSON.parse(skaicius))
         console.log('skaicius', skaicius);
     }, [])
 
 
     useEffect(() => {
         localStorage.setItem('SKAICIUS', counter)
-        console.log('counter', counter);
+        console.log('counter', JSON.stringify(counter));
     }, [counter])
+
 
     return(
 
@@ -30,8 +35,11 @@ function StoreValue(){
             <button style={{
                 fontSize: '50px',
                 padding: '40px 60px',
-                marginBottom: '100px'
+                marginBottom: '20px',
             }} onClick={addNumber}>+</button>
+            <button style={{
+                marginBottom: '100px'
+            }} onClick={reset}>reset</button>
         </>
 
     );
