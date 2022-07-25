@@ -15,14 +15,12 @@ function StoreValue(){
     useEffect(() => {
         const skaicius = localStorage.getItem('SKAICIUS');
         if(skaicius !== 0) setCounter(JSON.parse(skaicius))
-        console.log('skaicius', skaicius);
-    }, [])
+    }, []);
 
 
     useEffect(() => {
-        localStorage.setItem('SKAICIUS', counter)
-        console.log('counter', JSON.stringify(counter));
-    }, [counter])
+        localStorage.setItem('SKAICIUS', JSON.stringify(counter))
+    }, [counter]);
 
 
     return(
