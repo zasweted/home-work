@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Random from "../Functions/random-number-generator";
+import InnerInceptionCube from "./inner-inception-cube";
 
 
 function InceptionCubes(){
@@ -32,10 +33,7 @@ function InceptionCubes(){
             <div className="inception-container">
 
                 {
-                    cubeBlack.map((_, i) => <div className="cube-black" key={i}>
-                        <button onClick={addCount}>+</button>
-                        <p>{count}</p>
-                    </div>)
+                    cubeBlack.map((_, i) => <InnerInceptionCube key={i}></InnerInceptionCube>)
                 }
 
             </div>

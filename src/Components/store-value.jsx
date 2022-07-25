@@ -14,7 +14,7 @@ function StoreValue(){
 
     useEffect(() => {
         const skaicius = localStorage.getItem('SKAICIUS');
-        if(skaicius !== null) setCounter(JSON.parse(skaicius))
+        if(skaicius !== 0) setCounter(JSON.parse(skaicius))
         console.log('skaicius', skaicius);
     }, [])
 
