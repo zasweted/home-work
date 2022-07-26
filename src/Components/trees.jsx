@@ -37,8 +37,13 @@ function Trees(){
 
         <>
             <p style={{
-            fontSize: '40px',
-        }}>-----2.1-----</p>
+                fontSize: '40px',
+            }}>-----2.1-----</p>
+            <div className="button-container">
+                <button onClick={addOakTree}>azuolas</button>
+                <button onClick={addBirchTree}>berzas</button>
+                <button onClick={addAshTree}>uosis</button>
+            </div>
         <div className="green-field">
             <div className="grass">
 
@@ -61,11 +66,6 @@ function Trees(){
                     }
 
             </div>
-        </div>
-        <div className="button-container">
-            <button onClick={addOakTree}>azuolas</button>
-            <button onClick={addBirchTree}>berzas</button>
-            <button onClick={addAshTree}>uosis</button>
         </div>
         <div style={{
             marginBottom: '80px'

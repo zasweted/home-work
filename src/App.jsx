@@ -7,6 +7,7 @@ import AddTwoCubes from './Components/add-two-cubes';
 import Trees from './Components/trees';
 import InceptionCubes from './Components/inception-cubes';
 import StoreValue from './Components/store-value';
+import Form from './Components/form';
 
 
 
@@ -26,6 +27,7 @@ function App() {
             <Trees></Trees>
             <InceptionCubes></InceptionCubes>
             <StoreValue></StoreValue>
+            <Form></Form>
             
         
       </header>

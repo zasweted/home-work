@@ -132,4 +132,40 @@
   background-color: #000;
 }
 
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  background-color: pink;
+  border: 1px solid #000;
+  border-radius: 25px;
+  width: 80%;
+  min-height: 500px;
+}
+
+.form-cube-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  height: 300px;
+}
+
+.inner-form > input {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 60px;
+  margin-top: 20px;
+  border-radius: 25px;
+}
+
+.form-cube {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #000;
+  background-color: #990000;
+}
+
 /* Custom css end*/
