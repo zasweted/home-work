@@ -6,8 +6,9 @@ function CatForm(){
     const [weigth, setWeigth] = useState('')
     const submit = (e) => {
         e.preventDefault();
-
     }
+
+    
 
     useEffect(() => {
         localStorage.setItem('cat', JSON.stringify({name: name, weigth: weigth}))
