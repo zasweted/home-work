@@ -168,4 +168,13 @@
   background-color: #990000;
 }
 
+
+.cat-form-container {
+
+  background-color: pink;
+  padding: 50px;
+  border: 1px solid #000;
+  margin: 100px 0;
+}
+
 /* Custom css end*/
