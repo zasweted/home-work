@@ -1,19 +1,22 @@
 import { useEffect, useState } from "react";
 
 function CatForm(){
+    
+    // const [name, setName] = useState('');
+    // const [weigth, setWeigth] = useState('')
+    
+     
+    // const submit = (e) => {
+    //     e.preventDefault();
 
-    const [name, setName] = useState('');
-    const [weigth, setWeigth] = useState('')
-    const submit = (e) => {
-        e.preventDefault();
-    }
+    // }
 
     
-
-    useEffect(() => {
-        localStorage.setItem('cat', JSON.stringify({name: name, weigth: weigth}))
-    })
-
+    
+    const getValue = (e) => {
+        console.log(e.target.value);
+    }
+   
 
 
     return(
@@ -22,7 +25,7 @@ function CatForm(){
             <form className="cat-form-container">
                 <label>Cat Name</label>
                 <input
-                onChange={(e) => setName(e.target.value)}
+                onChange={getValue}
                 style={{
                     margin: '0 10px',
                     height: '30px',
@@ -30,7 +33,6 @@ function CatForm(){
                 }}  type="text"/>
                 <label>Cat Weigth</label>
                 <input
-                onChange={(e) => setWeigth(e.target.value)}
                 style={{
                     margin: '0 10px',
                     height: '30px',
@@ -40,7 +42,7 @@ function CatForm(){
                     margin: '40px 0 0 0'
                 }}>
                     <button
-                    onClick={submit}
+                    
                     style={{
                         padding: '20px 40px',
                         color: 'black',
