@@ -9,7 +9,7 @@ function CatForm(){
         setCatName(e.target.value )
     }
     const getWeigthValue = (e) => {
-        setCatWeigth(e.target.value  + 'kg')
+        setCatWeigth(e.target.value)
     }
    
     const [list, setList] = useState([])
@@ -28,28 +28,31 @@ function CatForm(){
         localStorage.setItem('KATUKAI', JSON.stringify(list))
     }, [list])
 
-    const sorted = [...list].sort((a, b) => a > b ? 1 : -1)
-
-    console.log('sorted', sorted);
+    const suma = list.reduce((a, b) => a[1] + b[1])
+    console.log('suma', suma);
     return(
 
         <>
             <form className="cat-form-container">
-                <label>Cat Name</label>
+                <label style={{
+                    color: '#000'
+                }}>Cat Name</label>
                 <input
                 onChange={getNameValue}
                 style={{
                     margin: '0 10px',
                     height: '30px',
-                    fontSize: '20px'
+                    fontSize: '20px',
                 }}  type="text"/>
-                <label>Cat Weigth</label>
+                <label style={{
+                    color: '#000'
+                }}>Cat Weigth</label>
                 <input
                 onChange={getWeigthValue}
                 style={{
                     margin: '0 10px',
                     height: '30px',
-                    fontSize: '20px'
+                    fontSize: '20px',
                 }} type="number"/>
                 <div style={{
                     margin: '40px 0 0 0'
@@ -71,9 +74,9 @@ function CatForm(){
                     }}>-=Cat list=-</h1>
                     <div>
                         {
-                            list.map((a, i) => <li style={{
+                            list.sort((a, b) => a[1] - b[1]).map((a, i) => <li style={{
                                 color: '#000'
-                            }} key={i}>{`${a[0]}   ${a[1]}`}</li>)
+                            }} key={i}>{`${a[0]}   ${a[1]}kg`}</li>)
                         }
                     </div>
                 </div>
