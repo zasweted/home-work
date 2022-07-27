@@ -26,7 +26,7 @@ function Form(){
                             color: '#000'
                         }}>Enter number</label>
                         <input style={{
-                            width: '50px',
+                            width: '100px',
                             height: '50px',
                             marginTop: '50px',
                             marginLeft: '50px',
