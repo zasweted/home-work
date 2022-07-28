@@ -15,9 +15,9 @@ function CatForm(){
     const [list, setList] = useState([])
     const submit = (e) => {
         e.preventDefault();
-        setList(a => [...a, [catName, catWeigth]])
+        setList(a => [...a, {catName, catWeigth}])
     }
-    console.log(list); 
+    
     
     useEffect(() => {
         const catData = localStorage.getItem('KATUKAI')
@@ -28,8 +28,7 @@ function CatForm(){
         localStorage.setItem('KATUKAI', JSON.stringify(list))
     }, [list])
 
-    const suma = list.reduce((a, b) => a[1] + b[1])
-    console.log('suma', suma);
+    
     return(
 
         <>
@@ -78,6 +77,9 @@ function CatForm(){
                                 color: '#000'
                             }} key={i}>{`${a[0]}   ${a[1]}kg`}</li>)
                         }
+                    </div>
+                    <div style={{color: '#000'}}>Bendras svoris :
+                        
                     </div>
                 </div>
                 

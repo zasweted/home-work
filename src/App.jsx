@@ -9,6 +9,8 @@ import InceptionCubes from './Components/inception-cubes';
 import StoreValue from './Components/store-value';
 import Form from './Components/form';
 import CatForm from './Components/cat-form';
+import Santikis from './Components/santikis';
+import Select from './Components/select';
 
 
 
@@ -30,6 +32,8 @@ function App() {
             <StoreValue></StoreValue>
             <Form></Form>
             <CatForm></CatForm>
+            <Santikis></Santikis>
+            <Select></Select>
             
         
       </header>
