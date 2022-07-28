@@ -20,8 +20,9 @@ function Sliders(){
     }
 
     const [list, setList] = useState([])
-    const save = (e) => {
-        setList(e => [...e, {size, color}])
+    const save = () => {
+        setList(b => [...b, ''])
+        setArea(_ => [])
     }
     console.log('list', list);
 
@@ -45,7 +46,7 @@ function Sliders(){
                         <button onClick={save}>Išsauguoti</button>
                     </div>
                 </fieldset>
-                <div className="slider-cube-container">
+                <div className="slider-cube-container-create">
                     {
                         area.map((_, i) => <div className="slider-cube" key={i} style={{
                             width: size +'px',
@@ -53,6 +54,16 @@ function Sliders(){
                             backgroundColor: color
                         }}></div>)
                     }
+                </div>
+                <div className="slider-cube-container-saved">
+                    {
+                        list.map((a, i)=> <div  key={i} style={{
+                            width: a.size +'px',
+                            height: a.size +'px',
+                            color: a.color
+                        }}>NOT FUN</div>)
+                    }
+
                 </div>
                
             </div>

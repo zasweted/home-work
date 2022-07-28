@@ -177,7 +177,14 @@
   margin: 100px 0;
 }
 
-.slider-cube-container {
+.slider-cube-container-create {
+  display: flex;
+  width: 800px;
+  height: 300px;
+  border: 1px solid #fff;
+
+}
+.slider-cube-container-saved {
   display: flex;
   width: 800px;
   height: 300px;

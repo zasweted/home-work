@@ -26,9 +26,9 @@ function Select() {
         { id: 3.5, familyFont: 'Futara' },
     ]
 
-    const [colorName, setColorName] = useState('')
-    const [fontSizeName, setFontSizeName] = useState('')
-    const [fontFamilyName, setFontFamilyName] = useState('')
+    const [colorName, setColorName] = useState('Crimson')
+    const [fontSizeName, setFontSizeName] = useState('20px')
+    const [fontFamilyName, setFontFamilyName] = useState('Arial')
     const [showText, setShowText] = useState('')
 
     const handleInput = (e) => {
