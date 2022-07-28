@@ -69,7 +69,7 @@ function Select() {
                     <label></label>
                 </div>
                 <div>
-                    <input onChange={handleInput} type="text"></input>
+                    <input onChange={handleInput} type="text" placeholder="Enter Text Here"></input>
                 </div>
                 <div>
                     <h1 style={{

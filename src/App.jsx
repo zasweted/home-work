@@ -11,6 +11,7 @@ import Form from './Components/form';
 import CatForm from './Components/cat-form';
 import Santikis from './Components/santikis';
 import Select from './Components/select';
+import Sliders from './Components/sliders';
 
 
 
@@ -34,6 +35,7 @@ function App() {
             <CatForm></CatForm>
             <Santikis></Santikis>
             <Select></Select>
+            <Sliders></Sliders>
             
         
       </header>
