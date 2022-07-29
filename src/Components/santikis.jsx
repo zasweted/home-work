@@ -7,9 +7,11 @@ function Santikis(){
 
     const leftChange = (e) => {
         setLeftNum(e.target.value)
+        setRightNum(e.target.value / 2)
     }
     const rightChange = (e) => {
         setRightNum(e.target.value)
+        setLeftNum(e.target.value * 2)
     }
     return(
 

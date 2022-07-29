@@ -18,7 +18,6 @@ function CatForm(){
         setList(a => [...a, {catName, catWeigth}])
     }
     
-    
     useEffect(() => {
         const catData = localStorage.getItem('KATUKAI')
         if(catData !== null) setList(JSON.parse(catData))
@@ -27,7 +26,6 @@ function CatForm(){
     useEffect(() => {
         localStorage.setItem('KATUKAI', JSON.stringify(list))
     }, [list])
-
     
     return(
 
@@ -73,12 +71,16 @@ function CatForm(){
                     }}>-=Cat list=-</h1>
                     <div>
                         {
-                            list.sort((a, b) => a[1] - b[1]).map((a, i) => <li style={{
+                            list.sort((a, b) => (a.catName > b.catName)? 1 : -1).map((a, i) => <li style={{
                                 color: '#000'
-                            }} key={i}>{`${a[0]}   ${a[1]}kg`}</li>)
+                            }} key={i}>{`${a.catName}   ${a.catWeigth} kg`}</li>)
                         }
                     </div>
-                    <div style={{color: '#000'}}>Bendras svoris :
+                    <div style={{color: '#000'}}>
+                        {
+                            list.length !== 0 ? `Bendras Katuku Svoris : ${list.map(x => x = x.catWeigth).map(parseFloat).reduce((a, b) => a + b)} Kg.`  : `Katuku sarasas tuscias...`
+                        }
+                        
                         
                     </div>
                 </div>

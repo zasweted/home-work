@@ -10,21 +10,18 @@ function Sliders(){
     const [size, setSize] = useState('100px');
     const inputHandleSize = (e) => {
         setSize(e.target.value)
-        console.log('size', e.target.value);
     }
 
     const [color, setColor] = useState('#000000');
     const inputHandleColor = (e) => {
         setColor(e.target.value)
-        console.log('color', e.target.value);
     }
 
     const [list, setList] = useState([])
     const save = () => {
-        setList(b => [...b, ''])
+        setList(b => [...b, {size, color}])
         setArea(_ => [])
     }
-    console.log('list', list);
 
 
     return(
@@ -34,11 +31,11 @@ function Sliders(){
                 
                 <fieldset>
                     <div>
-                        <label For="size">Size</label>
+                        <label>Size</label>
                         <input onChange={inputHandleSize} type="range" id="size" name="size" min="10" max="200"></input>
                     </div>
                     <div>
-                        <label For="">Color</label>
+                        <label>Color</label>
                         <input onChange={inputHandleColor} type="color" id="color" name="color"></input>
                     </div>
                     <div>
@@ -57,12 +54,13 @@ function Sliders(){
                 </div>
                 <div className="slider-cube-container-saved">
                     {
-                        list.map((a, i)=> <div  key={i} style={{
+                        list.map((a, i)=> <div className="slider-cube"  key={i} style={{
                             width: a.size +'px',
                             height: a.size +'px',
-                            color: a.color
-                        }}>NOT FUN</div>)
+                            backgroundColor: a.color
+                        }}></div>)
                     }
+            
 
                 </div>
                
