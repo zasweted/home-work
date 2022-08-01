@@ -199,4 +199,65 @@
   height: 100px;
 }
 
+
+.farm-main {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  height: 90vh;
+  border: 1px solid #000
+}
+
+.farm-main > .farm-title {
+  display: flex;
+  flex-direction: row;
+}
+
+.farm-field {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  width: 40%;
+  height: 90%;
+  border: 3px dashed brown;
+  background-color: green;
+  
+}
+
+.avis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  font-size: 15px;
+  width: 80px;
+  height: 80px;
+  color: #000;
+  border: 1px solid #000;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.karve {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  font-size: 15px;
+  width: 80px;
+  height: 80px;
+  color: #fff;
+  background-color: brown;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.btn {
+  margin-top: 40px;
+  width: 100px;
+  height: 50px;
+}
+
 /* Custom css end*/

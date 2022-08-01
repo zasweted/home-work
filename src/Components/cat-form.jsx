@@ -26,6 +26,8 @@ function CatForm(){
     useEffect(() => {
         localStorage.setItem('KATUKAI', JSON.stringify(list))
     }, [list])
+
+    
     
     return(
 

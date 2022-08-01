@@ -12,6 +12,7 @@ import CatForm from './Components/cat-form';
 import Santikis from './Components/santikis';
 import Select from './Components/select';
 import Sliders from './Components/sliders';
+import MyLittleFarm from './Components/MyLittleFarm';
 
 
 
@@ -36,6 +37,7 @@ function App() {
             <Santikis></Santikis>
             <Select></Select>
             <Sliders></Sliders>
+            <MyLittleFarm></MyLittleFarm>
             
         
       </header>
