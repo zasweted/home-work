@@ -7,7 +7,10 @@ function MyLittleFarm(){
     
 
     const [avys, setAvys] = useState([]);
+    console.log('avys', avys);
     const [karves, setKarves] =useState([]);
+    console.log('karves', karves);
+    const [transfer, setTransfer] = useState([]);
     const addAnimal = () => {
         for(let i = 0; i< Random(5, 20); i++){
             setAvys(x => [...x, {name: 'A', id: Random(1000000, 9999999)}]);
@@ -39,14 +42,9 @@ function MyLittleFarm(){
         localStorage.setItem('KARVES', JSON.stringify(karves))
     }, [avys, karves])
 
-    console.log('avys list', avys, karves);
+    
 
-    const clicker = (e) => {
-        if(e.target.classList.value === e.target.classList.value ){
-            setAvys(_ => [])
-        }
-        console.log('klickas', e.target.classList.value);
-    }
+    
 
 
 
@@ -56,15 +54,15 @@ function MyLittleFarm(){
             <h1>------------------My Little Farm-------------------</h1>
             <div className="farm-main">
                 
-                <div className="farm-field" onClick={clicker}>
+                <div className="farm-field">
                     {
-                        avys.map((a, i)=> <div className="avis" key={a.id}>{`${a.name} ${a.id}`}</div>)
+                        avys.map((a)=> <div className="avis" id={a.id} key={a.id}>{`${a.name} ${a.id}`}</div>)
                     }
                 </div>
                 <button onClick={addAnimal} className="btn"> I Ganykla </button>
-                <div className="farm-field" onClick={clicker}>
+                <div className="farm-field">
                     {
-                        karves.map((a, i)=> <div className="karve" key={a.id}>{`${a.name} ${a.id}`}</div>)
+                        karves.map((a)=> <div className="karve" key={a.id}>{`${a.name} ${a.id}`}</div>)
                     }
                 </div>
             </div>
