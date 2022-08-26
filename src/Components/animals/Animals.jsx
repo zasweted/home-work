@@ -57,7 +57,7 @@ const Animals = () => {
         <>
             <h1>Gyvunu sarasas:</h1>
             {
-                animals.map(gyvuns => <Animal gyvuns={gyvuns}></Animal>)
+                animals.map(gyvuns => <Animal key={gyvuns.id} gyvuns={gyvuns}></Animal>)
             }
         </>
     )

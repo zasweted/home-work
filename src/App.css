@@ -272,4 +272,15 @@
   height: auto;
 }
 
+.book-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.book-item {
+  width: 40%;
+}
+
 /* Custom css end*/
