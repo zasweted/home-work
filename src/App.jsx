@@ -4,14 +4,11 @@ import Animals from './Components/animals/Animals';
 
 
 function App() {
-
-   
-  
-  
+    
   return (
     <div className="App">
       <header className="App-header">
-           <Animals></Animals>
+        <Animals></Animals>
       </header>
     </div>
   );
