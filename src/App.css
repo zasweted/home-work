@@ -260,4 +260,16 @@
   height: 50px;
 }
 
+.animal-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.animal-img {
+  width: 500px;
+  height: auto;
+}
+
 /* Custom css end*/
